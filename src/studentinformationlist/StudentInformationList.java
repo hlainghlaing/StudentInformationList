@@ -22,7 +22,7 @@ public class StudentInformationList extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/studentinformationlist/view/main.fxml"));
         
         Scene scene = new Scene(root);
-        
+        stage.setTitle("Students' Information List");
         stage.setScene(scene);
         stage.show();
     }
