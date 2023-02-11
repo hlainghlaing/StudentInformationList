@@ -8,7 +8,8 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="StudentInformationList.jar" size="5500" download="eager" />
+    <jar href="StudentInformationList.jar" size="8478" download="eager" />
+    <jar href="lib\mysql-connector-j-8.0.31.jar" size="2515519" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="StudentInformationList" >
     <param name="requiredFXVersion" value="8.0+"/>

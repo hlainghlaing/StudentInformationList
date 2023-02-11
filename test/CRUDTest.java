@@ -4,24 +4,24 @@
  * and open the template in the editor.
  */
 
+import java.sql.SQLException;
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.AfterClass;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import studentinformationlist.dao.StudentDAO;
-import studentinformationlist.database.Database;
 import studentinformationlist.model.Student;
 
 /**
  *
  * @author Dell
  */
-public class DatabaseTest {
+public class CRUDTest {
     
-    public DatabaseTest() {
+    public CRUDTest() {
     }
     
     @BeforeClass
@@ -43,11 +43,17 @@ public class DatabaseTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
+//    StudentDAO stdao=new StudentDAO();
 //     @Test
-//     public void testConnection() throws Exception
-//     {
-//        Database db=new Database();
-//        Assert.assertEquals(true,db.connect());
+//     public void testgetStudentByID() throws SQLException {
+//     assertEquals("Hlaing", stdao.getStudentByID(1).getName());
 //     }
-   
+//@Test
+//    public void testupdating() throws SQLException{
+//        StudentDAO stdao=new StudentDAO();
+//        Student st=stdao.getStudentByID(3);
+//        st.setEmail("emaillll@gmail.com");
+//        assertEquals(1,stdao.updateStudentInfo(st));
+//
+//    }
 }
