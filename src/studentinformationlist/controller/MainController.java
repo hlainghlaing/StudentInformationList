@@ -5,6 +5,7 @@
  */
 package studentinformationlist.controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Date;
 import java.sql.SQLException;
@@ -15,7 +16,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
@@ -27,6 +31,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import studentinformationlist.dao.StudentDAO;
 import studentinformationlist.model.Student;
@@ -138,7 +143,16 @@ public class MainController implements Initializable {
     }
 
     @FXML
-    private void goAboutProject(ActionEvent event) {
+    private void goAboutProject(ActionEvent event) throws IOException {
+        Stage newstage=new Stage();
+        Parent root=FXMLLoader.load(getClass().getResource("/studentinformationlist/aboutproject/about.fxml"));
+        Scene scene=new Scene(root);
+        Stage mainstage=(Stage)nameField.getScene().getWindow();
+        newstage.initOwner(mainstage);
+        newstage.initModality(Modality.WINDOW_MODAL);
+        newstage.setTitle("About Project");
+        newstage.setScene(scene);
+        newstage.show();
     }
     
     @FXML

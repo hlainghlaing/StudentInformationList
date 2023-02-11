@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <BorderPane prefHeight="550.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="This project is about to know the information of students in a class or the information of the employees in a company." textFill="#17419c">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="183.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pic.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="550.0" top="30.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="developer name : Khin Yadanar Hlaing" underline="true">
+                     <VBox.margin>
+                        <Insets left="550.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <top>
+            <VBox alignment="CENTER" prefHeight="121.0" prefWidth="850.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="About Information List Project" textFill="#1f49d3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
